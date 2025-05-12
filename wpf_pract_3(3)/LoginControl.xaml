@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="wpf_pract_3_3_.LoginControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             Height="200" Width="300">
+    <Border BorderBrush="Gray" BorderThickness="1" Padding="10" CornerRadius="5">
+        <StackPanel>
+            <TextBlock Text="Ім'я користувача:" Margin="0,0,0,5"/>
+            <TextBox x:Name="UsernameBox" Height="25" Margin="0,0,0,10"/>
+
+            <TextBlock Text="Пароль:" Margin="0,0,0,5"/>
+            <PasswordBox x:Name="PasswordBox" Height="25" Margin="0,0,0,10"/>
+
+            <Button Content="Увійти" Height="30" Click="LoginButton_Click" Margin="0,0,0,10"/>
+
+            <TextBlock x:Name="MessageBlock" Foreground="Green" FontWeight="Bold"/>
+        </StackPanel>
+    </Border>
+</UserControl>
